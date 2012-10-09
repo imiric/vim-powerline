@@ -8,6 +8,7 @@ let g:Powerline#Themes#default#theme = Pl#Theme#Create(
 		\ , 'syntastic:errors'
 		\ , Pl#Segment#Truncate()
 		\ , 'tagbar:currenttag'
+		\ , 'pythonhelper'
 		\ , Pl#Segment#Split()
 		\ , 'rvm:string'
 		\ , 'virtualenv:statusline'

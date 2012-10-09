@@ -16,6 +16,7 @@ let g:Powerline#Segments#segments = Pl#Segment#Init([
 	\ Pl#Segment#Create('pwd'             , '%{substitute(getcwd(), expand("$HOME"), "~", "g")}'),
 	\ Pl#Segment#Create('static_str'      , '%%{"%s"}'),
 	\ Pl#Segment#Create('raw'             , '%s'),
+    \ Pl#Segment#Create('pythonhelper'    , '%{Powerline#Functions#PHTagInStatusLine()}'),
 	\ Pl#Segment#Create('fileformat'      , '%{&fileformat}', Pl#Segment#Modes('!N')),
 	\ Pl#Segment#Create('fileencoding'    , '%{(&fenc == "" ? &enc : &fenc)}', Pl#Segment#Modes('!N')),
 	\ Pl#Segment#Create('filetype'        , '%{strlen(&ft) ? &ft : "no ft"}', Pl#Segment#Modes('!N')),

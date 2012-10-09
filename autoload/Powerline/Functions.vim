@@ -139,3 +139,12 @@ function! Powerline#Functions#GetWSMarker() " {{{
 	endif
 	return b:statusline_trailing_space_warning
 endfunction " }}}
+function! Powerline#Functions#PHTagInStatusLine() " {{{
+    " return value of w:PHStatusLine in case it's set
+    if (exists("w:PHStatusLine"))
+        return w:PHStatusLine
+    " otherwise just return empty string
+    else
+        return ""
+    endif
+endfunction " }}}
